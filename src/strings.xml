@@ -1,0 +1,20 @@
+<strings>
+    <!-- Main Activity -->
+    <string name="main_title">メイン - OfficialShop</string>
+    <string name="main_content">希望する操作を選択してください。&#xA;※現在アイテムを買う機能は使用できません。</string>
+    <string name="main_button1">アイテムを売る</string>
+    <string name="main_button2">アイテムを買う</string>
+    <!-- SellItem Activity -->
+    <string name="sellitem_title">買取 - OfficialShop</string>
+    <string name="sellitem_content1">インベントリ内のアイテムを売却します。売却できるアイテムの数と金額は以下の通りです。</string>
+    <string name="sellitem_content2">アイテムの内訳</string>
+    <string name="sellitem_content3">合計金額</string>
+    <string name="sellitem_button1">アイテムを売る</string>
+    <string name="sellitem_button2">しふぉんホームに戻る</string>
+    <string name="sellitem_phone_home_message">アイテムを売却しました。</string>
+    <!-- SellItem Error Activity -->
+    <string name="sellitem_error_title">エラー - OfficialShop</string>
+    <string name="sellitem_error_content">売却できるアイテムが見つかりませんでした。現在売却できるアイテムは以下の通りです。&#xA;&lt;アイテム一覧&gt;&#xA; - 原木&#xA; - 丸石&#xA;&#xA;アイテム追加の要望は受け付けています。</string>
+    <string name="sellitem_error_button1">アプリホームへ戻る</string>
+    <string name="sellitem_error_button2">しふぉんホームへ戻る</string>
+</strings>
