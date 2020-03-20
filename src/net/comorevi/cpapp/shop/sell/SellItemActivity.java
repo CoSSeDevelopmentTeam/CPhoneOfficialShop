@@ -10,7 +10,6 @@ import net.comorevi.cphone.cphone.model.ModalResponse;
 import net.comorevi.cphone.cphone.model.Response;
 import net.comorevi.cphone.cphone.widget.activity.ReturnType;
 import net.comorevi.cphone.cphone.widget.activity.base.ModalActivity;
-import net.comorevi.cphone.presenter.SharingData;
 import net.comorevi.moneyapi.MoneySAPI;
 
 import java.util.*;
