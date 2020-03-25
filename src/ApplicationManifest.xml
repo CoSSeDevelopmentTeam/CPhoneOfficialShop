@@ -6,7 +6,7 @@
         <title>OfficialShop</title>
         <description>公式ショップアプリ。アイテムを買うだけでなく売ることでお金を手に入れられます！</description>
         <author>popkechupki</author>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
         <mcbeversion>1.14</mcbeversion>
         <iconType>url</iconType>
         <icon>https://info.comorevi.net/images/favicon/logo_transparent.png</icon>
@@ -18,4 +18,15 @@
         <name>MainActivity</name>
         <main>net.comorevi.cpapp.shop.MainActivity</main>
     </activity>
+
+    <external-lang>
+        <lang region="en">
+            <title>OfficialShop</title>
+            <description>This is a official shop application for cphone. You can not only buy items but sell your items.</description>
+        </lang>
+        <lang region="ja">
+            <title>公式ショップ/OfficialShop</title>
+            <description>公式ショップアプリ。アイテムを買うだけでなく売ることでお金を手に入れられます！</description>
+        </lang>
+    </external-lang>
 </manifest>
