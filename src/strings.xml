@@ -17,4 +17,9 @@
     <string name="sellitem_error_content">売却できるアイテムが見つかりませんでした。現在売却できるアイテムは以下の通りです。&#xA;&lt;アイテム一覧&gt;&#xA; - 原木&#xA; - 丸石&#xA;&#xA;アイテム追加の要望は受け付けています。</string>
     <string name="sellitem_error_button1">アプリホームへ戻る</string>
     <string name="sellitem_error_button2">しふぉんホームへ戻る</string>
+    <!-- BuyItem Detail Activity -->
+    <string name="buyitem_detail_title">オプション - OfficialShop</string>
+    <string name="buyitem_detail_label">購入するアイテムとID、メタ値は以下の通りです。&#xA;個数を設定してください。</string>
+    <string name="buyitem_detail_input_text">購入数</string>
+    <string name="buyitem_detail_input_placeholder">個数を入力してください...</string>
 </strings>
