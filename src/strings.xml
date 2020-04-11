@@ -1,11 +1,12 @@
 <strings>
+    <string name="error_title">エラー - 公式ショップ</string>
     <!-- Main Activity -->
-    <string name="main_title">メイン - OfficialShop</string>
+    <string name="main_title">メイン - 公式ショップ</string>
     <string name="main_content">希望する操作を選択してください。&#xA;※現在アイテムを買う機能は使用できません。</string>
     <string name="main_button1">アイテムを売る</string>
     <string name="main_button2">アイテムを買う</string>
     <!-- SellItem Activity -->
-    <string name="sellitem_title">買取 - OfficialShop</string>
+    <string name="sellitem_title">買取 - 公式ショップ</string>
     <string name="sellitem_content1">インベントリ内のアイテムを売却します。売却できるアイテムの数と金額は以下の通りです。</string>
     <string name="sellitem_content2">アイテムの内訳</string>
     <string name="sellitem_content3">合計金額</string>
@@ -13,13 +14,31 @@
     <string name="sellitem_button2">しふぉんホームに戻る</string>
     <string name="sellitem_phone_home_message">アイテムを売却しました。</string>
     <!-- SellItem Error Activity -->
-    <string name="sellitem_error_title">エラー - OfficialShop</string>
+    <string name="sellitem_error_title">エラー - 公式Shop</string>
     <string name="sellitem_error_content">売却できるアイテムが見つかりませんでした。現在売却できるアイテムは以下の通りです。&#xA;&lt;アイテム一覧&gt;&#xA; - 原木&#xA; - 丸石&#xA;&#xA;アイテム追加の要望は受け付けています。</string>
     <string name="sellitem_error_button1">アプリホームへ戻る</string>
     <string name="sellitem_error_button2">しふぉんホームへ戻る</string>
+    <!-- BuyItem Activity -->
+    <string name="buyitem_title">購入 - 公式ショップ</string>
+    <string name="buyitem_content">購入したいアイテムを選択してください。</string>
     <!-- BuyItem Detail Activity -->
-    <string name="buyitem_detail_title">オプション - OfficialShop</string>
+    <string name="buyitem_detail_title">オプション - 公式ショップ</string>
     <string name="buyitem_detail_label">購入するアイテムとID、メタ値は以下の通りです。&#xA;個数を設定してください。</string>
     <string name="buyitem_detail_input_text">購入数</string>
     <string name="buyitem_detail_input_placeholder">個数を入力してください...</string>
+    <string name="buyitem_detail_error">正しい数値を入力してください。</string>
+    <string name="buyitem_detail_error_button1">もどる</string>
+    <string name="buyitem_detail_error_button2">アイテム一覧へ</string>
+    <!-- BuyItem Confirm Activity -->
+    <string name="buyitem_confirm_title">確認 - 公式ショップ</string>
+    <string name="buyitem_confirm_button1">購入する</string>
+    <string name="buyitem_confirm_button2">メインメニューに戻る</string>
+    <string name="buyitem_confirm_error1">所持金が不足しています。</string>
+    <string name="buyitem_confirm_error1_button1">個数を変更する</string>
+    <string name="buyitem_confirm_error1_button2">メインメニューに戻る</string>
+    <string name="buyitem_confirm_error2">インベントリが一杯です！</string>
+    <string name="buyitem_confirm_error2_button1">個数を変更する</string>
+    <string name="buyitem_confirm_error2_button2">メインメニューに戻る</string>
+    <string name="buyitem_confirm_phone_home_message">アイテムを購入しました。</string>
+
 </strings>

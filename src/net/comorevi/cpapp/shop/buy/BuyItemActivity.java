@@ -28,8 +28,8 @@ public class BuyItemActivity extends ListActivity {
     public void onCreate(Bundle bundle) {
         this.bundle = bundle;
         this.cPhone = bundle.getCPhone();
-        this.setTitle("title");
-        this.setContent("この機能は現在利用できません。");
+        this.setTitle(bundle.getString("buyitem_title"));
+        this.setContent(bundle.getString("buyitem_content"));
         BuyItem.getShopItemList().forEach((buyItem) -> {
             buttonList.add(new Button(buyItem.getNameJpn()+"/"+ buyItem.getName()));
         });
