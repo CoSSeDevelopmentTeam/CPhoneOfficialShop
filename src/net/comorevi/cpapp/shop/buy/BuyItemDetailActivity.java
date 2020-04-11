@@ -29,7 +29,7 @@ public class BuyItemDetailActivity extends CustomActivity {
         Element[] elements = {
                 new Label(bundle.getString("buyitem_detail_label")),
                 new Label(bundle.getString("アイテム(Item)\n - "+ buyItem.getNameJpn()+"/"+ buyItem.getName())+"\nID:META\n - "+ buyItem.getId()+":"+ buyItem.getMeta()),
-                new Input(bundle.getString("buyitem_detail_input_text"), bundle.getString("buyitem_detail_input_placeholder"), "0")
+                new Input(bundle.getString("buyitem_detail_input_text"), bundle.getString("buyitem_detail_input_placeholder"))
         };
         this.addFormElements(elements);
     }
@@ -37,8 +37,8 @@ public class BuyItemDetailActivity extends CustomActivity {
     @Override
     public ReturnType onStop(Response response) {
         CustomResponse customResponse = (CustomResponse) response;
-        if (customResponse.getResult().get(2).toString().equals("0") || !isPositiveNumber(customResponse.getResult().get(2).toString())) {
-            new MessageActivity(getManifest(), bundle.getString("error_title") ,bundle.getString("buyitem_detail_error"), bundle.getString("buyitem_detail_error_button1"), bundle.getString("buyitem_detail_error_button2"), new BuyItemDetailActivity(getManifest(), buyItem), new BuyItemActivity(getManifest())).start(bundle);
+        if (!isPositiveNumber(customResponse.getResult().get(2).toString())) {
+            new MessageActivity(getManifest(), bundle.getString("error_title") ,bundle.getString("buyitem_detail_error"), bundle.getString("buyitem_detail_error_button1"), bundle.getString("buyitem_detail_error_button2"), new BuyItemDetailActivity(getManifest(), buyItem)).start(bundle);
             return ReturnType.TYPE_CONTINUE;
         } else if (isPositiveNumber(customResponse.getResult().get(2).toString())) {
             new BuyItemConfirmActivity(getManifest(), buyItem, Integer.parseInt(customResponse.getResult().get(2).toString())).start(bundle);

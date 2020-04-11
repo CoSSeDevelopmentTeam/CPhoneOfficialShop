@@ -47,10 +47,10 @@ public class BuyItemConfirmActivity extends ModalActivity {
         ModalResponse modalResponse = (ModalResponse) response;
         if (modalResponse.isButton1Clicked()) {
             if (!MoneySAPI.getInstance().isPayable(modalResponse.getPlayer(), price)) {
-                new MessageActivity(getManifest(), bundle.getString("error_title") ,bundle.getString("buyitem_confirm_error1"), bundle.getString("buyitem_confirm_error1_button1"), bundle.getString("buyitem_confirm_error1_button2"), new BuyItemDetailActivity(getManifest(), buyItem), new MainActivity(getManifest())).start(bundle);
+                new MessageActivity(getManifest(), bundle.getString("error_title") ,bundle.getString("buyitem_confirm_error1"), bundle.getString("buyitem_confirm_error1_button1"), bundle.getString("buyitem_confirm_error1_button2"), new BuyItemDetailActivity(getManifest(), buyItem)).start(bundle);
                 return ReturnType.TYPE_CONTINUE;
             } else if (!modalResponse.getPlayer().getInventory().canAddItem(Item.get(buyItem.getId(), buyItem.getMeta(), amount))) {
-                new MessageActivity(getManifest(), bundle.getString("error_title") ,bundle.getString("buyitem_confirm_error2"), bundle.getString("buyitem_confirm_error2_button1"), bundle.getString("buyitem_confirm_error2_button2"), new BuyItemDetailActivity(getManifest(), buyItem), new MainActivity(getManifest())).start(bundle);
+                new MessageActivity(getManifest(), bundle.getString("error_title") ,bundle.getString("buyitem_confirm_error2"), bundle.getString("buyitem_confirm_error2_button1"), bundle.getString("buyitem_confirm_error2_button2"), new BuyItemDetailActivity(getManifest(), buyItem)).start(bundle);
                 return ReturnType.TYPE_CONTINUE;
             }
 

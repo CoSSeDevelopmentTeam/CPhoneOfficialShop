@@ -28,17 +28,17 @@
     <string name="buyitem_detail_input_placeholder">個数を入力してください...</string>
     <string name="buyitem_detail_error">正しい数値を入力してください。</string>
     <string name="buyitem_detail_error_button1">もどる</string>
-    <string name="buyitem_detail_error_button2">アイテム一覧へ</string>
+    <string name="buyitem_detail_error_button2">しふぉんホームへ</string>
     <!-- BuyItem Confirm Activity -->
     <string name="buyitem_confirm_title">確認 - 公式ショップ</string>
     <string name="buyitem_confirm_button1">購入する</string>
-    <string name="buyitem_confirm_button2">メインメニューに戻る</string>
+    <string name="buyitem_confirm_button2">アプリトップへ戻る</string>
     <string name="buyitem_confirm_error1">所持金が不足しています。</string>
     <string name="buyitem_confirm_error1_button1">個数を変更する</string>
-    <string name="buyitem_confirm_error1_button2">メインメニューに戻る</string>
+    <string name="buyitem_confirm_error1_button2">しふぉんホームへ</string>
     <string name="buyitem_confirm_error2">インベントリが一杯です！</string>
     <string name="buyitem_confirm_error2_button1">個数を変更する</string>
-    <string name="buyitem_confirm_error2_button2">メインメニューに戻る</string>
+    <string name="buyitem_confirm_error2_button2">しふぉんホームへ</string>
     <string name="buyitem_confirm_phone_home_message">アイテムを購入しました。</string>
 
 </strings>
