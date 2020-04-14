@@ -2,7 +2,7 @@
     <string name="error_title">エラー - 公式ショップ</string>
     <!-- Main Activity -->
     <string name="main_title">メイン - 公式ショップ</string>
-    <string name="main_content">希望する操作を選択してください。&#xA;※現在アイテムを買う機能は使用できません。</string>
+    <string name="main_content">希望する操作を選択してください。</string>
     <string name="main_button1">アイテムを売る</string>
     <string name="main_button2">アイテムを買う</string>
     <!-- SellItem Activity -->
