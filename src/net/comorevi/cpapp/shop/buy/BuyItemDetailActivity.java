@@ -11,6 +11,7 @@ import net.comorevi.cphone.cphone.widget.activity.original.MessageActivity;
 import net.comorevi.cphone.cphone.widget.element.Element;
 import net.comorevi.cphone.cphone.widget.element.Input;
 import net.comorevi.cphone.cphone.widget.element.Label;
+import net.comorevi.moneyapi.MoneySAPI;
 
 public class BuyItemDetailActivity extends CustomActivity {
 
@@ -28,7 +29,7 @@ public class BuyItemDetailActivity extends CustomActivity {
         this.setTitle(bundle.getString("buyitem_detail_title"));
         Element[] elements = {
                 new Label(bundle.getString("buyitem_detail_label")),
-                new Label(bundle.getString("アイテム(Item)\n - "+ buyItem.getNameJpn()+"/"+ buyItem.getName())+"\nID:META\n - "+ buyItem.getId()+":"+ buyItem.getMeta()),
+                new Label(bundle.getString("アイテム(Item)\n - "+ buyItem.getNameJpn()+"/"+ buyItem.getName())+"\nID:META\n - "+ buyItem.getId()+":"+ buyItem.getMeta()+ "\n１つあたりの値段(Price)\n - "+ buyItem.getPrice()+ MoneySAPI.UNIT),
                 new Input(bundle.getString("buyitem_detail_input_text"), bundle.getString("buyitem_detail_input_placeholder"))
         };
         this.addFormElements(elements);
