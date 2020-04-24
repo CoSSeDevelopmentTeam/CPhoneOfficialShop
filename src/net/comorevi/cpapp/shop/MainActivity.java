@@ -29,7 +29,11 @@ public class MainActivity extends ListActivity {
         this.cPhone = bundle.getCPhone();
         this.setTitle(bundle.getString("main_title"));
         this.setContent(bundle.getString("main_content"));
-        Button[] buttons = {new Button(bundle.getString("main_button1")), new Button(bundle.getString("main_button2"))};
+        Button[] buttons = {
+                new Button(bundle.getString("main_button1")),
+                new Button(bundle.getString("main_button2")),
+                new Button("Open Fake Inventory.")
+        };
         this.addButtons(buttons);
     }
 
@@ -47,6 +51,9 @@ public class MainActivity extends ListActivity {
             case 1:
                 new BuyItemActivity(getManifest()).start(cPhone.getPlayer(), bundle.getStrings());
                 return ReturnType.TYPE_CONTINUE;
+            case 2:
+                EventListener.inv.sendFakeInventory(listResponse.getPlayer());
+                return ReturnType.TYPE_IGNORE;
         }
         return ReturnType.TYPE_END;
     }

@@ -10,6 +10,7 @@
         <mcbeversion>1.14</mcbeversion>
         <iconType>url</iconType>
         <icon>https://info.comorevi.net/images/favicon/logo_transparent.png</icon>
+        <initialize>net.comorevi.cpapp.shop.EventListener</initialize>
     </application>
 
     <permission type = "default" />
