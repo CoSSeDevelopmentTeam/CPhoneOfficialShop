@@ -3,7 +3,6 @@ package net.comorevi.cpapp.shop;
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
 import cn.nukkit.event.server.DataPacketReceiveEvent;
-import cn.nukkit.inventory.Inventory;
 import cn.nukkit.network.protocol.ContainerClosePacket;
 import net.comorevi.cpapp.shop.sell.NewSellItemActivity;
 import net.comorevi.cphone.cphone.application.ApplicationManifest;
@@ -20,17 +19,14 @@ import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class EventListener extends Initializer implements Listener {
-
-    public static FakeInvManager inv = new FakeInvManager();
-    public static Map<String, Inventory> invMap = new LinkedHashMap<>();
-
     @Override
     public void initialize() {
         SharingData.server.getPluginManager().registerEvents(this, SharingData.pluginInstance);
+        if (!ApplicationData.instances.containsKey("FakeInvManager")) {
+            ApplicationData.instances.put("FakeInvManager", new FakeInvManager());
+        }
     }
 
     @EventHandler
@@ -40,9 +36,10 @@ public class EventListener extends Initializer implements Listener {
 
     @EventHandler
     public void onPacketReceive(DataPacketReceiveEvent event) {
+        FakeInvManager fiv = (FakeInvManager) ApplicationData.instances.get("FakeInvManager");
         if (event.getPacket() instanceof ContainerClosePacket) {
-            System.out.println(invMap.get(event.getPlayer().getName()));
-            if (invMap.containsKey(event.getPlayer().getName())) {
+            System.out.println(fiv.invMap.get(event.getPlayer().getName()));
+            if (fiv.invMap.containsKey(event.getPlayer().getName())) {
                 System.out.println("Event called2.");
                 try {
                     ApplicationManifest manifest = ApplicationData.applications.get("OfficialShop");

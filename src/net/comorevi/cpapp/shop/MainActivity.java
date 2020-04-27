@@ -7,6 +7,7 @@ import net.comorevi.cpapp.shop.sell.SellItemActivity;
 import net.comorevi.cpapp.shop.sell.SellItemErrorActivity;
 import net.comorevi.cphone.cphone.CPhone;
 import net.comorevi.cphone.cphone.application.ApplicationManifest;
+import net.comorevi.cphone.cphone.data.ApplicationData;
 import net.comorevi.cphone.cphone.model.Bundle;
 import net.comorevi.cphone.cphone.model.ListResponse;
 import net.comorevi.cphone.cphone.model.Response;
@@ -52,7 +53,7 @@ public class MainActivity extends ListActivity {
                 new BuyItemActivity(getManifest()).start(cPhone.getPlayer(), bundle.getStrings());
                 return ReturnType.TYPE_CONTINUE;
             case 2:
-                EventListener.inv.sendFakeInventory(listResponse.getPlayer());
+                ((FakeInvManager) ApplicationData.instances.get("FakeInvManager")).sendFakeInventory(listResponse.getPlayer());
                 return ReturnType.TYPE_IGNORE;
         }
         return ReturnType.TYPE_END;
