@@ -81,6 +81,7 @@ public enum BuyItem {
     SEALANTERN(169, 0, "Sealantern", "シーランタン", 400),
     GlASS_PANE(102, 0, "Glass Pane", "ガラス板", 160),
     WHITE_STAINED_GLASS_PANE(160, 0, "White Stained Glass Pane", "白のステンドグラスの板", 180),
+    EGG(344, 0, "Egg", "卵", 40),
     BEEF(363, 0, "Beef", "生の牛肉", 100),
     COOKED_BEEF(364, 0, "Cooked Beef", "ステーキ", 120),
     CHICKEN(365, 0, "Chiken", "生の鶏肉", 100),
