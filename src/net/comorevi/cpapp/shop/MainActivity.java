@@ -1,13 +1,9 @@
 package net.comorevi.cpapp.shop;
 
-import cn.nukkit.inventory.PlayerInventory;
-import cn.nukkit.item.Item;
 import net.comorevi.cpapp.shop.buy.BuyItemActivity;
 import net.comorevi.cpapp.shop.sell.SellItemActivity;
-import net.comorevi.cpapp.shop.sell.SellItemErrorActivity;
 import net.comorevi.cphone.cphone.CPhone;
 import net.comorevi.cphone.cphone.application.ApplicationManifest;
-import net.comorevi.cphone.cphone.data.ApplicationData;
 import net.comorevi.cphone.cphone.model.Bundle;
 import net.comorevi.cphone.cphone.model.ListResponse;
 import net.comorevi.cphone.cphone.model.Response;
@@ -32,8 +28,7 @@ public class MainActivity extends ListActivity {
         this.setContent(bundle.getString("main_content"));
         Button[] buttons = {
                 new Button(bundle.getString("main_button1")),
-                new Button(bundle.getString("main_button2")),
-                new Button("Open Fake Inventory.")
+                new Button(bundle.getString("main_button2"))
         };
         this.addButtons(buttons);
     }
@@ -43,29 +38,12 @@ public class MainActivity extends ListActivity {
         ListResponse listResponse = (ListResponse) response;
         switch (listResponse.getButtonIndex()) {
             case 0:
-                if (hasItem()) {
-                    new SellItemActivity(getManifest()).start(cPhone.getPlayer(), bundle.getStrings());
-                } else {
-                    new SellItemErrorActivity(getManifest()).start(cPhone.getPlayer(), bundle.getStrings());
-                }
+                new SellItemActivity(getManifest()).start(cPhone.getPlayer(), bundle.getStrings());
                 return ReturnType.TYPE_CONTINUE;
             case 1:
                 new BuyItemActivity(getManifest()).start(cPhone.getPlayer(), bundle.getStrings());
                 return ReturnType.TYPE_CONTINUE;
-            case 2:
-                ((FakeInvManager) ApplicationData.instances.get("FakeInvManager")).sendFakeInventory(listResponse.getPlayer());
-                return ReturnType.TYPE_IGNORE;
         }
         return ReturnType.TYPE_END;
-    }
-
-    private boolean hasItem() {
-        PlayerInventory inventory = cPhone.getPlayer().getInventory();
-        for (Integer key : inventory.slots.keySet()) {
-            if (inventory.getItem(key).getId() == Item.WOOD || inventory.getItem(key).getId() == Item.WOOD2 || inventory.getItem(key).getId() == Item.COBBLE) {
-                return true;
-            }
-        }
-        return false;
     }
 }
