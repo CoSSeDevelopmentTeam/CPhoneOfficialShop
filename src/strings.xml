@@ -7,9 +7,7 @@
     <string name="main_button2">アイテムを買う</string>
     <!-- SellItem Activity -->
     <string name="sellitem_title">買取 - 公式ショップ</string>
-    <string name="sellitem_content1">インベントリ内のアイテムを売却します。売却できるアイテムの数と金額は以下の通りです。</string>
-    <string name="sellitem_content2">アイテムの内訳</string>
-    <string name="sellitem_content3">合計金額</string>
+    <string name="sellitem_content">アイテムを売却できます。売却するアイテムを次の画面で選択してください。アイテム一つごとの買取額は以下の通りです。&#xA;=== 買取金額 ===</string>
     <string name="sellitem_button1">アイテムを売る</string>
     <string name="sellitem_button2">しふぉんホームに戻る</string>
     <string name="sellitem_phone_home_message">アイテムを売却しました。</string>
