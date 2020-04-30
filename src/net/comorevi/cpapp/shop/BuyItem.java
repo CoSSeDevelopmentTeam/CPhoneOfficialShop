@@ -86,19 +86,19 @@ public enum BuyItem {
     COOKED_BEEF(364, 0, "Cooked Beef", "ステーキ", 120),
     CHICKEN(365, 0, "Chiken", "生の鶏肉", 100),
     COOKED_CHICKEN(366, 0, "Cooked Chicken", "焼き鳥", 120),
-    POTION_SPLASH_NIGHT_VISION(438, 6, "Splash night vision", "スプラッシュ 暗視", 200),
-    POTION_SPLASH_LEAPING(438, 11, "Splash leaping", "スプラッシュ 跳躍", 200),
-    POTION_SPLASH_FIRE_REGISTANCE(438, 12, "Splash fire registance", "スプラッシュ 耐火", 200),
-    POTION_SPLASH_SPEED(438, 16, "Splash speed", "スプラッシュ スピード", 200),
-    POTION_SPLASH_SLOWNESS(438, 18, "Splash slowness", "スプラッシュ 鈍化", 200),
-    POTION_SPLASH_WATER_BREATHING(438, 20, "Splash water breathing", "スプラッシュ 水中呼吸", 200),
-    POTION_SPLASH_INSTANT_HEALTH(438, 22, "Splash instant health", "スプラッシュ 回復", 200),
-    POTION_SPLASH_HARMING(438, 24, "Splash harming", "スプラッシュ ダメージ", 200),
-    POTION_SPLASH_POISON(438, 27, "Splash poison", "スプラッシュ 毒", 200),
-    POTION_SPLASH_REGENERATION(438, 30, "Splash regeneration", "スプラッシュ 再生", 200),
-    POTION_SPLASH_STRENGTH(438, 33, "Splash strength", "スプラッシュ 力", 200),
-    POTION_SPLASH_WEAKNESS(438, 35, "Splash weakness", "スプラッシュ 弱体化", 200),
-    POTION_SPLASH_SLOW_FALLING(438, 35, "Splash slow falling", "スプラッシュ 落下速度低下", 200);
+    POTION_SPLASH_NIGHT_VISION(438, 6, "Splash night vision", "スプラッシュ 暗視", 600),
+    POTION_SPLASH_LEAPING(438, 11, "Splash leaping", "スプラッシュ 跳躍", 600),
+    POTION_SPLASH_FIRE_REGISTANCE(438, 12, "Splash fire registance", "スプラッシュ 耐火", 600),
+    POTION_SPLASH_SPEED(438, 16, "Splash speed", "スプラッシュ スピード", 600),
+    POTION_SPLASH_SLOWNESS(438, 18, "Splash slowness", "スプラッシュ 鈍化", 600),
+    POTION_SPLASH_WATER_BREATHING(438, 20, "Splash water breathing", "スプラッシュ 水中呼吸", 600),
+    POTION_SPLASH_INSTANT_HEALTH(438, 22, "Splash instant health", "スプラッシュ 回復", 600),
+    POTION_SPLASH_HARMING(438, 24, "Splash harming", "スプラッシュ ダメージ", 600),
+    POTION_SPLASH_POISON(438, 27, "Splash poison", "スプラッシュ 毒", 600),
+    POTION_SPLASH_REGENERATION(438, 30, "Splash regeneration", "スプラッシュ 再生", 600),
+    POTION_SPLASH_STRENGTH(438, 33, "Splash strength", "スプラッシュ 力", 600),
+    POTION_SPLASH_WEAKNESS(438, 35, "Splash weakness", "スプラッシュ 弱体化", 600),
+    POTION_SPLASH_SLOW_FALLING(438, 35, "Splash slow falling", "スプラッシュ 落下速度低下", 600);
 
     private final int id;
     private final int meta;
