@@ -66,6 +66,7 @@ public enum BuyItem {
     QUARTZ_BLOCK(155, 0, "Quartz Block", "クォーツブロック", 300),
     BOOK_SHELF(47, 0, "Book Shelf", "本棚", 250),
     CHEST(54, 0, "Chest", "チェスト", 200),
+    ENDER_CHEST(130, 0, "Ender Chest", "エンダーチェスト", 1000),
     WOODEN_PRESSURE_PLATE(72, 0, "Wooden Pressure Plate", "木の感圧版", 100),
     ICE(79, 0, "ice", "氷", 300),
     SNOW(80, 0, "Snow", "雪", 300),
@@ -81,11 +82,14 @@ public enum BuyItem {
     SEALANTERN(169, 0, "Sealantern", "シーランタン", 400),
     GlASS_PANE(102, 0, "Glass Pane", "ガラス板", 160),
     WHITE_STAINED_GLASS_PANE(160, 0, "White Stained Glass Pane", "白のステンドグラスの板", 180),
+    SHULKER_BOX(205, 0, "Shulker Box", "シュルカーボックス", 400),
     EGG(344, 0, "Egg", "卵", 40),
+    INK_SAC(351, 0, "InK Sac", "イカ墨", 40),
     BEEF(363, 0, "Beef", "生の牛肉", 100),
     COOKED_BEEF(364, 0, "Cooked Beef", "ステーキ", 120),
     CHICKEN(365, 0, "Chiken", "生の鶏肉", 100),
     COOKED_CHICKEN(366, 0, "Cooked Chicken", "焼き鳥", 120),
+    EXP_BOTTLE(384, 0, "Experience Bottole", "経験値ボトル", 600),
     POTION_SPLASH_NIGHT_VISION(438, 6, "Splash night vision", "スプラッシュ 暗視", 600),
     POTION_SPLASH_LEAPING(438, 11, "Splash leaping", "スプラッシュ 跳躍", 600),
     POTION_SPLASH_FIRE_REGISTANCE(438, 12, "Splash fire registance", "スプラッシュ 耐火", 600),
@@ -97,8 +101,7 @@ public enum BuyItem {
     POTION_SPLASH_POISON(438, 27, "Splash poison", "スプラッシュ 毒", 600),
     POTION_SPLASH_REGENERATION(438, 30, "Splash regeneration", "スプラッシュ 再生", 600),
     POTION_SPLASH_STRENGTH(438, 33, "Splash strength", "スプラッシュ 力", 600),
-    POTION_SPLASH_WEAKNESS(438, 35, "Splash weakness", "スプラッシュ 弱体化", 600),
-    POTION_SPLASH_SLOW_FALLING(438, 35, "Splash slow falling", "スプラッシュ 落下速度低下", 600);
+    POTION_SPLASH_WEAKNESS(438, 35, "Splash weakness", "スプラッシュ 弱体化", 600);
 
     private final int id;
     private final int meta;
