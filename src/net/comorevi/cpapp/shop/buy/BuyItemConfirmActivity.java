@@ -12,7 +12,7 @@ import net.comorevi.cphone.cphone.widget.activity.ReturnType;
 import net.comorevi.cphone.cphone.widget.activity.base.ModalActivity;
 import net.comorevi.cphone.cphone.widget.activity.original.MessageActivity;
 import net.comorevi.moneyapi.MoneySAPI;
-import net.comorevi.moneyapi.util.TAXType;
+import net.comorevi.moneyapi.util.TaxType;
 
 public class BuyItemConfirmActivity extends ModalActivity {
 
@@ -26,7 +26,7 @@ public class BuyItemConfirmActivity extends ModalActivity {
         super(manifest);
         this.buyItem = buyItem;
         this.amount = amount;
-        this.price = (int) (buyItem.getPrice() * amount * TAXType.ADMIN_SHOP);
+        this.price = (int) (buyItem.getPrice() * amount * TaxType.ADMIN_SHOP.getRatio());
     }
 
     @Override
