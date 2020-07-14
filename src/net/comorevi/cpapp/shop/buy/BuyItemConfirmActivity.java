@@ -11,8 +11,8 @@ import net.comorevi.cphone.cphone.model.Response;
 import net.comorevi.cphone.cphone.widget.activity.ReturnType;
 import net.comorevi.cphone.cphone.widget.activity.base.ModalActivity;
 import net.comorevi.cphone.cphone.widget.activity.original.MessageActivity;
-import net.comorevi.moneyapi.MoneySAPI;
-import net.comorevi.moneyapi.util.TaxType;
+import net.comorevi.np.moneys.MoneySAPI;
+import net.comorevi.np.moneys.util.TaxType;
 
 public class BuyItemConfirmActivity extends ModalActivity {
 

@@ -9,7 +9,7 @@ import net.comorevi.cphone.cphone.model.Response;
 import net.comorevi.cphone.cphone.widget.activity.ReturnType;
 import net.comorevi.cphone.cphone.widget.activity.base.ModalActivity;
 import net.comorevi.cphone.presenter.SharingData;
-import net.comorevi.moneyapi.MoneySAPI;
+import net.comorevi.np.moneys.MoneySAPI;
 
 public class SellItemActivity extends ModalActivity {
     public SellItemActivity(ApplicationManifest manifest) {

@@ -11,7 +11,7 @@ import net.comorevi.cphone.cphone.widget.activity.original.MessageActivity;
 import net.comorevi.cphone.cphone.widget.element.Element;
 import net.comorevi.cphone.cphone.widget.element.Input;
 import net.comorevi.cphone.cphone.widget.element.Label;
-import net.comorevi.moneyapi.MoneySAPI;
+import net.comorevi.np.moneys.MoneySAPI;
 
 public class BuyItemDetailActivity extends CustomActivity {
 
